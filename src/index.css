@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 800px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+h1 {
+  font-size: 2.6em;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+label {
+  font-size: 20px;
+  color: #333;
+}
+
+
+input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 80px;
+  font-size: 20px;
+  margin: 0 15px;
+
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  width: 110px;
+  cursor: pointer;
+}
+
+.btn-generate {
+  background-color: rgb(100, 13, 200);
+  margin-right: 10px;
+
+}
+
+.btn-clear {
+  background-color: rgb(96, 94, 94);
+
+}
+
+article {
+  border-top: 1px solid #999;
+
+  width: 100%;
+
+  margin-top: 40px;
+}
+
+article>p {
+  padding: 15px 0;
+  color: #333;
+}
+
+@media(max-width: 880px) {
+  .container {
+    padding: 0 10px;
+    width: 480px !important;
+  }
+
+  .article {
+    width: 90%;
+  }
+}
